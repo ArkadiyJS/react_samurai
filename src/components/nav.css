@@ -1,0 +1,6 @@
+.nav__bar {
+    grid-area: nav;
+    background-color: rgb(148, 207, 88);
+    padding: 20px
+    
+  }

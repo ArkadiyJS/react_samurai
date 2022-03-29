@@ -1,0 +1,281 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"v",
+				"value"
+			],
+			[
+				"te",
+				"test"
+			],
+			[
+				"c",
+				"COLOR_ORANGE"
+			],
+			[
+				"ca",
+				"caption"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
+				"d",
+				"div"
+			],
+			[
+				"fig",
+				"figcaption"
+			],
+			[
+				"co",
+				"code"
+			],
+			[
+				"f",
+				"frame"
+			],
+			[
+				"he",
+				"header"
+			],
+			[
+				"li",
+				"link"
+			],
+			[
+				"em",
+				"em"
+			],
+			[
+				"h",
+				"h1"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"ht",
+				"html"
+			],
+			[
+				"ti",
+				"title"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/react_test/react_kabzda_1/public/robots.txt",
+		"/C/Users/1/Desktop/learn js/12222222222",
+		"/C/Users/1/Downloads/Ёлочка/Инструкция.txt",
+		"/C/Users/1/Desktop/learn js/css_practic.txt",
+		"/C/Users/1/Desktop/learn js/js_practic.txt",
+		"/C/Users/1/Desktop/learn js/learn_js.txt",
+		"/C/Users/1/Desktop/Веб разработчик/Html trening progress/123.html",
+		"/C/Users/1/Desktop/Веб разработчик/Html trening progress/Изучение тегов.html",
+		"/C/Users/1/Desktop/Веб разработчик/Html trening progress/scriptone.js",
+		"/D/Zona Downloads/Shang-Chi And The Legend Of The Ten Rings (2021) [1080p] [BluRay] [5.1] [YTS.MX]/YTSProxies.com.txt",
+		"/C/Users/1/Desktop/Веб разработчик/Галерея Вологодских корень сайта/свой.html",
+		"/C/Program Files (x86)/Zona/README.txt",
+		"/C/Program Files (x86)/Steam/steamapps/common/dota 2 beta/game/dota/bin/win64/client.dll",
+		"/D/Zona Downloads/Kena Bridge of Spirits/Manifest_DebugFiles_Win64.txt",
+		"/D/Zona Downloads/Kena Bridge of Spirits/Manifest_NonUFSFiles_Win64.txt",
+		"/C/Users/1/Documents/Warcraft III/CustomKeyBindings/CustomKeys.txt",
+		"/C/Users/1/Desktop/Веб разработчик/свой.css",
+		"/C/Users/1/Desktop/Веб разработчик/js/jgallery.js",
+		"/C/Users/1/Desktop/Веб разработчик/dist/js/jgallery.min.js",
+		"/C/Users/1/Downloads/jgallery-2.2.1/types/gallery/defaults.d.ts",
+		"/C/Users/1/Downloads/jgallery-2.2.1/dist/js/jgallery.js",
+		"/C/Users/1/Downloads/jgallery-2.2.1/webpack.config.js",
+		"/C/Users/1/Downloads/jgallery-2.2.1/README.md",
+		"/C/Users/1/Desktop/Веб разработчик/123.html",
+		"/C/Users/1/Desktop/Веб разработчик/свой.html",
+		"/C/Users/1/Desktop/Веб разработчик/учёба html.html",
+		"/C/Users/1/Desktop/Веб разработчик/первый.html",
+		"/D/SteamLibrary/steamapps/common/dota 2 beta/game/dota/bin/win64/client.dll",
+		"/D/python/test.py.py",
+		"/D/python/open.py",
+		"/D/python/test.py"
+	],
+	"find":
+	{
+		"height": 153.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "package.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

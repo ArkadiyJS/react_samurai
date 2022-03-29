@@ -1,0 +1,5 @@
+.footer__bar {
+    grid-area: footer;
+    background-color: blueviolet;
+    padding: 20px
+  }

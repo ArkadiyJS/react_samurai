@@ -1,0 +1,8 @@
+.header__line {
+    grid-area: head_line;
+    background-color: rgb(92, 93, 91);
+    padding: 10px;
+    }
+  .logo_head img {
+    width: 60px;
+  }
