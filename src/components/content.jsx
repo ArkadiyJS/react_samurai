@@ -4,12 +4,14 @@ import './content.css';
 function ContentCore () {
     return (
         <div className="content__core">
-            <div>оснв картинка</div>
-            <div>аватарка</div>
-            <div>мои посты</div>
-            <div>посты</div>
-            <div>посты1</div>
-            <div>посты2</div>
+            <div className=''>оснв картинка</div>
+            <div className=''>аватарка</div>
+            <div className='posts'>
+                мои посты
+                <div className='item' >посты 0</div>
+                <div className='item'>посты 1</div>
+                <div className='item'>посты 2</div>
+            </div>
             
             </div>
     )

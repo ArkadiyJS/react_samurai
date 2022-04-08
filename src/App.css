@@ -1,6 +1,6 @@
 .app-wrapper{
   display: grid;
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 60px 1fr 70px;
   grid-template-columns: 2fr 10fr;
   grid-template-areas: 
   'head_line head_line'

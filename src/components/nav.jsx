@@ -5,17 +5,17 @@ import './nav.css';
 function Navbar() {
     return (
         <nav className="nav__bar">
-            <div>
+            <div className='item'>
                 profile
             </div>
-            <div>
+            <div className='item'>
                 musick
             </div>
-            <div>
+            <div className='item'>
                 messege
 
             </div>
-            <div>
+            <div className='item'>
                 setting
             </div>
         </nav>);
