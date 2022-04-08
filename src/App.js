@@ -6,12 +6,14 @@ import ProfileCore from './components/profile/profile';
 import Footer from './components/footer/footers';
 
 
+
 function App() {
   return (
     <div className='app-wrapper'>
      <Header />
      <Navbar />
      <ProfileCore />
+     
      <Footer />
     </div>
   );
