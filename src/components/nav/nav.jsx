@@ -1,21 +1,21 @@
 import React from 'react';
-import './nav.css';
+import s from'./nav.module.css';
 
 
 function Navbar() {
     return (
-        <nav className="nav__bar">
-            <div className='item'>
+        <nav className={s.nav__bar}>
+            <div className={s.item}>
                 profile
             </div>
-            <div className='item'>
+            <div className={`${s.item} ${s.active}`}>
                 musick
             </div>
-            <div className='item'>
+            <div className={s.item}>
                 messege
 
             </div>
-            <div className='item'>
+            <div className={s.item}>
                 setting
             </div>
         </nav>);
