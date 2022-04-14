@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./dialogs.module.css";
 
-function Dialogs (props) {
+function Dialogs () {
     return (
         <div className={s.dialogs}>
             <div className={s.human}>
