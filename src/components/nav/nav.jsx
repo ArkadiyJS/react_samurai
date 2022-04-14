@@ -6,13 +6,14 @@ function Navbar() {
     return (
         <nav className={s.nav__bar}>
             <div className={s.item}>
-                profile
+               <a href='/profile'>profile</a> 
+               
             </div>
             <div className={`${s.item} ${s.active}`}>
                 musick
             </div>
             <div className={s.item}>
-                messege
+                <a href='/dialogs'>messege</a>
 
             </div>
             <div className={s.item}>
