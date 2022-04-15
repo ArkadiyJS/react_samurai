@@ -1,4 +1,22 @@
 .dialogs {
     display: grid;
-    grid-template-columns: 80px 1fr;
+    grid-template-columns: 2fr 10fr;
+}
+.dialogs__item {
+    background-color: aquamarine;
+
+}
+.dialog{
+    padding: 10px;
+
+}
+.messeges__item{
+background-color: blueviolet;
+}
+.messege{
+    padding: 10px;
+
+}
+.active{
+    background-color: gold;
 }

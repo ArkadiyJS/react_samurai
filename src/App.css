@@ -13,3 +13,6 @@
 .app-wraper-content {
   grid-area: content;
 }
+.active {
+  background-color: gold;
+}

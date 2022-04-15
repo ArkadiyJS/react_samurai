@@ -8,6 +8,6 @@
     color: white;
     text-decoration: none;
   }
-  .item a.activelink {
-    color: gold;
+  .active {
+    background-color: gold;
   }

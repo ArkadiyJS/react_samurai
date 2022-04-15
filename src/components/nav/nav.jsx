@@ -7,22 +7,22 @@ function Navbar() {
     return (
         <nav className={s.nav__bar}>
             <div className={s.item}>
-                <NavLink to='/profile' activeClassName={s.activelink}>profile</NavLink>
+                <NavLink to='/profile'  >profile</NavLink>
 
             </div>
             <div className={s.item}>
-                <NavLink to='/musick' activeClassName={s.activelink}>musick</NavLink> 
+                <NavLink to='/musick' >musick</NavLink> 
             </div>
             <div className={s.item}>
-                <NavLink to='/dialogs' activeClassName={s.activelink}>messege</NavLink>
+                <NavLink to='/dialogs' >messege</NavLink>
 
             </div>
             <div className={s.item}>
-                <NavLink to='/news' activeClassName={s.activelink}>News</NavLink>
+                <NavLink to='/news' >News</NavLink>
             </div>
 
             <div className={s.item}>
-                <NavLink to='/setting' activeClassName={s.activelink}>setting</NavLink>
+                <NavLink to='/setting' >setting</NavLink>
             </div>
         </nav>);
 
