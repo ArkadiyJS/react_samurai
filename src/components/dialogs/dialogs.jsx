@@ -8,19 +8,19 @@ function Dialogs () {
             <div className={s.dialogs__item}>
             human
             <div className={s.dialog + ' ' + s.active}>
-                <NavLink to='/dialogs/arkasha'>arkasha</NavLink> 
+                <NavLink to='/dialogs/1'>arkasha</NavLink> 
             </div>
             <div className={s.dialog}>
-                <NavLink to='/dialogs/arkasha'>svetik</NavLink>
+                <NavLink to='/dialogs/2'>svetik</NavLink>
             </div>
             <div className={s.dialog}>
-                <NavLink to='/dialogs/arkasha' >matysha</NavLink>
+                <NavLink to='/dialogs/3' >matysha</NavLink>
             </div>
             <div className={s.dialog}>
-                <NavLink to='/dialogs/arkasha'>sofia</NavLink>
+                <NavLink to='/dialogs/4'>sofia</NavLink>
             </div>
             <div className={s.dialog} >
-                <NavLink to='/dialogs/arkasha'>Kuzya</NavLink>
+                <NavLink to='/dialogs/5'>Kuzya</NavLink>
 
             </div>
             
