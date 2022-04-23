@@ -3,6 +3,10 @@ import s from './myPosts.module.css';
 import Post from "./post/post";
 
 function MyPosts() {
+let postData = [
+    {id:1 }
+]
+
     return (
         <div className={s.myPosts}>
             <div>

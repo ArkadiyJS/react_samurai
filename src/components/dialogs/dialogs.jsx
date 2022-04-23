@@ -25,7 +25,27 @@ const Messege = (props) => {
 
 
 function Dialogs (props) {
+
+    let dialogData = [
+        { id: 1, name:'ark'},
+        { id: 2, name:'sveta'},
+        { id: 3, name:'matvey'},
+        { id: 4, name:'sofa'},
+        { id: 5, name:'kuzya'},
+
+    ]
+    let messagesData = [
+        { id: 1, name:'ark messege'},
+        { id: 2, name:'sveta messege'},
+        { id: 3, name:'matvey messege'},
+        { id: 4, name:'sofa messege'},
+        { id: 5, name:'kuzya messege'},
+
+    ]
+
+
     return (
+
         <div className={s.dialogs}>
             <div className={s.dialogs__item}>
             Dialogs
