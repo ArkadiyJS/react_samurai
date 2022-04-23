@@ -8,7 +8,7 @@
     max-height: 320px;
   }
   .avatar img {
-    
+    padding: 0fr;
     width: 120px;
     height: 90px;
   }

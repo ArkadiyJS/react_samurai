@@ -2,38 +2,49 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import s from "./dialogs.module.css";
 
-function Dialogs () {
+
+const DialogItem = (props) => {
+
+    let path = '/dialogs/'+ props.id
+
+    return (
+        <div>
+            <div className={s.dialog + ' ' + s.active}>
+                <NavLink to={path}>{props.name}</NavLink> 
+            </div>
+
+        </div>
+    )
+}
+const Messege = (props) => {
+    return(
+        <div className={s.messege}>{props.messege}</div>
+    )
+}
+
+
+
+function Dialogs (props) {
     return (
         <div className={s.dialogs}>
             <div className={s.dialogs__item}>
-            human
-            <div className={s.dialog + ' ' + s.active}>
-                <NavLink to='/dialogs/1'>arkasha</NavLink> 
-            </div>
-            <div className={s.dialog}>
-                <NavLink to='/dialogs/2'>svetik</NavLink>
-            </div>
-            <div className={s.dialog}>
-                <NavLink to='/dialogs/3' >matysha</NavLink>
-            </div>
-            <div className={s.dialog}>
-                <NavLink to='/dialogs/4'>sofia</NavLink>
-            </div>
-            <div className={s.dialog} >
-                <NavLink to='/dialogs/5'>Kuzya</NavLink>
-
-            </div>
+            Dialogs
+            <DialogItem  name='ark' id='1' />
+            <DialogItem  name='sveta' id='2' />
+            <DialogItem  name='matvey' id='3' />
+            <DialogItem  name='sofa' id='4' />
+            <DialogItem  name='kuzya' id='5' />
+            
             
             </div>
             
             <div className={s.messeges__item}>
 
                 messeges
-                <div className={s.messege}>ark</div>
-                <div className={s.messege}>svetik</div>
-                <div className={s.messege}>matvey</div>
-                <div className={s.messege}>sofa </div>
-                <div className={s.messege}>kuzya</div>
+                <Messege messege='hi'/>
+                <Messege messege='hi gayz'/>
+                <Messege messege='yo'/>
+                <Messege messege='buu'/>
 
             </div>
 
