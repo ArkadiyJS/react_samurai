@@ -3,9 +3,15 @@ import s from './myPosts.module.css';
 import Post from "./post/post";
 
 function MyPosts() {
-let postData = [
-    {id:1 }
+let posts = [
+    {id:1, message: 'hi gayz', likesCount:12 },
+    {id:2, message: 'hi gayz mayz', likesCount:15 },
+    {id:2, message: 'hi dudu', likesCount:15 },
+    {id:2, message: 'hi gara dada', likesCount:15 },
+    
 ]
+    let postElements = posts
+        .map((p)=><Post message={p.message} likesCount={p.likesCount} />)
 
     return (
         <div className={s.myPosts}>
@@ -17,10 +23,7 @@ let postData = [
             </div>
 
             <div className={s.posts}> my posts</div>
-            <Post message='hi, how are you?' likesCount='0' />
-            <Post message='GOOOD my first post' likesCount='23' />
-            <Post />
-            <Post />
+            {postElements}
         </div>
     )
 }
