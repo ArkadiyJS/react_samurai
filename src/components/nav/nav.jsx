@@ -14,7 +14,7 @@ function Navbar() {
                 <NavLink to='/musick' >musick</NavLink> 
             </div>
             <div className={s.item}>
-                <NavLink to='/dialogs' >messege</NavLink>
+                <NavLink to='/dialogs' >message</NavLink>
 
             </div>
             <div className={s.item}>
