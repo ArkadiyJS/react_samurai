@@ -22,8 +22,8 @@ function App(props) {
 
       <div className='app-wraper-content' >
         <Routes>
-          <Route path='/dialogs' element={<Dialogs dialogData={props.dialogData} messagesData={props.messagesData}/>}></Route>
-          <Route path='/profile' element={<ProfileCore posts={props.posts} />}></Route>
+          <Route path='/dialogs' element={<Dialogs dialogData={props.state.dialogsPage.dialogData} messagesData={props.state.dialogsPage.messagesData}/>}></Route>
+          <Route path='/profile' element={<ProfileCore posts={props.state.profilePage.posts} />}></Route>
         </Routes>
       </div>
       <Footer />
