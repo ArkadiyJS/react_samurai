@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './content.module.css';
 
-function ContentCore() {
+function ContentCore(props) {
     return (
         <div className={s.content}>
             
