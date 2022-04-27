@@ -1,7 +1,7 @@
 import React from 'react';
 import s from'./header.module.css';
 
-function Header (){
+function Header (props){
     return(
         <div className={s.header__line}>
             <div className={s.logo_head}>

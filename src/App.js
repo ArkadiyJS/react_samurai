@@ -8,7 +8,7 @@ import ProfileCore from './components/profile/profile';
 import { Route, Routes } from 'react-router-dom';
 
 
-function App() {
+function App(props) {
   return (
 
     <div className='app-wrapper'>
@@ -18,7 +18,7 @@ function App() {
       <div className='app-wraper-content'>
         <Routes>
           <Route path='/dialogs' element={<Dialogs />}></Route>
-          <Route path='/profile' element={<ProfileCore />}></Route>
+          <Route path='/profile' element={<ProfileCore posts={props.posts} />}></Route>
         </Routes>
       </div>
       <Footer />
