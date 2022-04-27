@@ -3,6 +3,7 @@ import s from './myPosts.module.css';
 import Post from "./post/post";
 
 function MyPosts(props) {
+    
 
     let postElements = props.posts.map((p)=><Post message={p.message} likesCount={p.likesCount} />)
 
