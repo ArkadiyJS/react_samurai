@@ -17,11 +17,11 @@ let state = {
     { id: 5, name:'kuzya'},
    ],
     messagesData: [
-    { id: 1, name:'ark message'},
-    { id: 2, name:'sveta message'},
-    { id: 3, name:'matvey message'},
-    { id: 4, name:'sofa message'},
-    { id: 5, name:'kuzya message'},
+    { id: 1, message:'ark message'},
+    { id: 2, message:'sveta message'},
+    { id: 3, message:'matvey message'},
+    { id: 4, message:'sofa message'},
+    { id: 5, message:'kuzya message'},
     ],
   }
 }

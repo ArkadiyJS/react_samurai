@@ -12,9 +12,13 @@
     text-decoration: none;
     
   }
-  .active {
-    background-color: gold;
+  .item a:active {
+    
+    color: gold;
+    
+    
   }
+  
   .item {
     display: grid;
     padding: 10px;
