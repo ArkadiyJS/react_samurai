@@ -20,7 +20,9 @@ function Dialogs (props) {
     let messageElements = props.messagesData
     .map ((message)=> <Message message={message.message}/>);
 
-
+    let addMessage = ()=> {
+        let text 
+    }
     
 
 
@@ -36,6 +38,8 @@ function Dialogs (props) {
             <div className={s.messages__item}>
 
                {messageElements}
+               <textarea></textarea>
+               <button>add message</button>
 
             </div>
 
