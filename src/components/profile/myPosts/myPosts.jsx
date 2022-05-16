@@ -3,6 +3,7 @@ import s from './myPosts.module.css';
 import Post from "./post/post";
 
 function MyPosts(props) {
+    debugger;
     
 
     let postElements = props.posts.map((p)=><Post message={p.message} likesCount={p.likesCount} />)
@@ -10,7 +11,7 @@ function MyPosts(props) {
     
     let addPost =()=>{
         let text = dataNewPost.current.value;
-        alert(text)
+        props.addPost(text)
     }
     let dataNewPost=React.createRef();
 
@@ -23,7 +24,7 @@ function MyPosts(props) {
                 <textarea ref={dataNewPost}>здесь будет текст</textarea>
             </div>
             <div>
-                <button onMouseOut={addPost}>add post</button>
+                <button onClick={addPost}>add post</button>
             </div>
 
             <div className={s.posts}> my posts</div>
