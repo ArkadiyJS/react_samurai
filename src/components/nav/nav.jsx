@@ -11,14 +11,14 @@ function Navbar(props) {
 
             </div>
             <div className={s.item}>
-                <NavLink to='/musick' >musick</NavLink> 
+                <NavLink to='/music' >music</NavLink> 
             </div>
             <div className={s.item}>
                 <NavLink to='/dialogs' >message</NavLink>
 
             </div>
             <div className={s.item}>
-                <NavLink to='/news' >News</NavLink>
+                <NavLink to='/news' >news</NavLink>
             </div>
 
             <div className={s.item}>
