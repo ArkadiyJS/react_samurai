@@ -22,7 +22,9 @@ function Dialogs (props) {
 
     let addMessage = ()=> {
         let text = newMessagesElement.current.value;
-        alert(text)
+        props.addMessage(text);
+        newMessagesElement.current.value = '';
+
     }
     let newMessagesElement = React.createRef();
 
