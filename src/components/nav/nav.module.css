@@ -3,7 +3,8 @@
     
     background-color: rgb(148, 207, 88);
     padding: 20px;
-    row-gap:  ;
+    height: 1000px;
+    width: 140px;
     
   }
   .item a {
