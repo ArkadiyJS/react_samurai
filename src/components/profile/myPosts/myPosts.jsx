@@ -3,7 +3,7 @@ import s from './myPosts.module.css';
 import Post from "./post/post";
 
 function MyPosts(props) {
-    debugger;
+    
     
 
     let postElements = props.posts.map((p)=><Post message={p.message} likesCount={p.likesCount} />)
@@ -12,8 +12,10 @@ function MyPosts(props) {
     let addPost =()=>{
         let text = dataNewPost.current.value;
         props.addPost(text)
+        dataNewPost.current.value = ''; 
+
     }
-    let dataNewPost=React.createRef();
+    let  dataNewPost=React.createRef();
 
     
 
