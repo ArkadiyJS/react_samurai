@@ -1,27 +1,20 @@
 .nav__bar {
-    grid-area: nav;
-    
-    background-color: rgb(148, 207, 88);
-    padding: 20px;
-    height: 1000px;
-    width: 160px;
-    
-  }
-  .item a {
-    
-    color: white;
-    text-decoration: none;
-    
-  }
-  .item a:active {
-    
-    color: gold;
-    
-    
-  }
-  
-  .item {
-    display: grid;
-    padding: 10px;
-    
-  }
+  display: grid;
+  grid-area: nav;
+
+  background-color: rgb(148, 207, 88);
+  padding: 20px;
+  height: 1000px;
+  width: 160px;
+  align-items: center;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+}
+
+.item a {
+  color: white;
+  text-decoration: none;
+}
+
+.item a:active {
+  color: gold;
+}
