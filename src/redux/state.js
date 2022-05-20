@@ -36,7 +36,18 @@ export let addPost = (postMessage)=>{
   
   state.profilePage.posts.push(newPost);
   rerenderEntireTree(state);
-
-
 }
+
+  export let addMessage = (newDataMessage)=>{
+    let newMessage = {
+      id: 6,
+      message:newDataMessage
+    }
+    state.dialogsPage.messagesData.push(newMessage);
+    rerenderEntireTree(state);
+
+  }
+
+
+
 export default state;
