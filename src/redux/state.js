@@ -8,6 +8,7 @@ let state = {
     {id:2, message: 'hi dudu', likesCount:15 },
     {id:2, message: 'hi gara dada', likesCount:15 },
     ],
+    newPostText:'it-samurai'
   },
 
   dialogsPage: {

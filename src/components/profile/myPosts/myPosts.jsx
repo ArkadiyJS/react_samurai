@@ -23,7 +23,7 @@ function MyPosts(props) {
     return (
         <div className={s.myPosts}>
             <div>
-                <textarea ref={dataNewPost} value={props.newPostText} onChange={} >здесь будет текст</textarea>
+                <textarea ref={dataNewPost} value={props.newPostText} onChange={onPostChange} >здесь будет текст</textarea>
             </div>
             <div>
                 <button onClick={addPost}>add post</button>
