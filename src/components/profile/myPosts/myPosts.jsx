@@ -10,20 +10,21 @@ function MyPosts(props) {
 
     
     let addPost =()=>{
-        let text = dataNewPost.current.value;
-        props.addPost(text)
-        dataNewPost.current.value = ''; 
-
+        props.addPost();
     }
     let  dataNewPost=React.createRef();
 
     
-    let onPostChange=()=>{};
+    let onPostChange=()=>{
+        let text = dataNewPost.current.value;
+        props.updateNewPostText(text)
+
+    };
 
     return (
         <div className={s.myPosts}>
             <div>
-                <textarea ref={dataNewPost} value={props.newPostText} onChange={onPostChange} >здесь будет текст</textarea>
+                <textarea ref={dataNewPost} value={props.newPostText} onChange={onPostChange} ></textarea>
             </div>
             <div>
                 <button onClick={addPost}>add post</button>
