@@ -38,7 +38,8 @@ function App(props) {
 
           <Route path='/profile' element={<ProfileCore posts={props.state.profilePage.posts}
             addPost={props.addPost}
-            newPostText={props.state.profilePage.newPostText} />}>
+            newPostText={props.state.profilePage.newPostText}
+            updateNewPostText={props.updateNewPostText} />}>
 
           </Route>
         </Routes>
