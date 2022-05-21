@@ -10,7 +10,7 @@ function ProfileCore(props) {
             
             <div>
                 <ProfileInfo/>
-                <MyPosts posts={props.posts} addPost={props.addPost} newPostText={props.newPostText}/>
+                <MyPosts posts={props.posts} addPost={props.addPost} newPostText={props.newPostText} updateNewPostText={props.updateNewPostText}/>
             </div>
 
 
