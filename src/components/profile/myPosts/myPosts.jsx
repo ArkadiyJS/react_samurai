@@ -18,12 +18,12 @@ function MyPosts(props) {
     let  dataNewPost=React.createRef();
 
     
-
+    let onPostChange=()=>{};
 
     return (
         <div className={s.myPosts}>
             <div>
-                <textarea ref={dataNewPost}>здесь будет текст</textarea>
+                <textarea ref={dataNewPost} value={props.newPostText} onChange={} >здесь будет текст</textarea>
             </div>
             <div>
                 <button onClick={addPost}>add post</button>
