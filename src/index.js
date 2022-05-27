@@ -1,5 +1,5 @@
-import {rerenderEntireTree} from './render';
-import state from './redux/state';
+
+import state, { subscribe } from './redux/state';
  
 
 
@@ -26,5 +26,8 @@ import {addPost} from './redux/state'
     </React.StrictMode>,
   
     document.getElementById('root')
-  );
+  );}
+  rerenderEntireTree(state);
+
+subscribe(rerenderEntireTree);
 
