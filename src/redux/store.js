@@ -15,7 +15,7 @@ let store = {
       ],
       newPostText: ''
     },
-
+ 
     dialogsPage: {
       dialogData: [
         { id: 1, name: 'ark' },
