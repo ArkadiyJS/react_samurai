@@ -38,6 +38,6 @@ function MyPosts(props) {
             <div className={s.posts}> my posts</div>
             {postElements}
         </div>
-    )
+     )
 }
 export default MyPosts;
