@@ -11,6 +11,7 @@ import MusicContent from './components/musiс/music';
 import News from './components/news/news';
 
 
+
 function App(props) {
 
 
@@ -29,17 +30,16 @@ function App(props) {
           <Route path='/setting' element={<Setting />}></Route>
           <Route path='/music' element={<MusicContent />}></Route>
           <Route path='/dialogs'
-            element={<Dialogs dialogData={props.state.dialogsPage.dialogData}
-            messagesData={props.state.dialogsPage.messagesData}
-            addMessage={props.addMessage} />}>
+            element={<Dialogs  store={props.store}
+             />}>
 
           </Route>
 
 
           <Route path='/profile' element={<ProfileCore posts={props.state.profilePage.posts}
-            addPost={props.addPost}
+            dispatch={props.dispatch}
             newPostText={props.state.profilePage.newPostText}
-            updateNewPostText={props.updateNewPostText} />}>
+             />}>
 
           </Route>
         </Routes>
