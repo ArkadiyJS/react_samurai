@@ -10,29 +10,8 @@ import { sendMessageCreator, updateNewMessageBodyCreator } from "../../redux/dia
 
 
 function Dialogs (props) {
-    debugger;
-    let state=props.store.getState()
     
     
-    let dialogsElements = props.store.dialogPage
-        .map( (dialog) => <DialogItem name={dialog.name} id={dialog.id}/> ); 
-    
-    
-   
-
-    let messageElements = props.messagesData
-    .map ((message)=> <Message message={message.message}/>);
-
-    let newMessageBody =state.newMessageBody;
-    let onNewMessageChange = (e)=>{
-       let body = e.textarea.value
-        props.store.dispatch( updateNewMessageBodyCreator(body));
-    }
-
-    let onSendMessageClick = ()=> {
-        props.store.dispatch(sendMessageCreator())
-
-    }
     
 
 
@@ -40,16 +19,16 @@ function Dialogs (props) {
 
         <div className={s.dialogs}>
             <div className={s.dialogs__item}>
-           {dialogsElements}
+           <DialogItem/>
             
             
             </div>
             
             <div className={s.messages__item}>
 
-               {messageElements}
-               <textarea  value={newMessageBody}  onChange={onNewMessageChange}></textarea>
-               <button onClick={onSendMessageClick}>add message</button>
+               <Message/>
+               <textarea  ></textarea>
+               <button >add message</button>
 
             </div>
 

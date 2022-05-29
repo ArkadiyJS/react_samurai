@@ -31,15 +31,15 @@ function App(props) {
           <Route path='/setting' element={<Setting />}></Route>
           <Route path='/music' element={<MusicContent />}></Route>
           <Route path='/dialogs'
-            element={<Dialogs  store={props.store}
+            element={<Dialogs  
              />}>
 
           </Route>
 
 
-          <Route path='/profile' element={<ProfileCore posts={props.state.profilePage.posts}
-            dispatch={props.dispatch}
-            newPostText={props.state.profilePage.newPostText}
+          <Route path='/profile' element={<ProfileCore 
+            
+            
              />}>
 
           </Route>
