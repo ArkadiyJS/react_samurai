@@ -9,7 +9,8 @@ import Dialogs from "./dialogs";
 
 
 function DialogsContainer (props) {
-    let state = props.store.getState().dialogsPage;
+    
+    
     
     let onSendMessageClick =()=>{
         props.store.dispatch(sendMessageCreator());
@@ -21,6 +22,6 @@ function DialogsContainer (props) {
     
 
     return (<Dialogs updateNewMessageBody={onNewMessageChange} sendMessage={onSendMessageClick}
-        dialogsPage={state}/>)
+        state={props.state}/>)
 }
 export default DialogsContainer;

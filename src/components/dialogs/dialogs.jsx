@@ -10,10 +10,10 @@ import Message from "./messages/messages";
 
 
 function Dialogs (props) {
-    let state = props.dialogsPage;
-    let dialogsElement= state.dialogs.map(d=><DialogItem name={d.name} id={d.id}/>)
-    let messagesElements = state.messages.map(m=><Message message={m.message}/>)
-    let onNewMessagebody= state.newMessagebody;
+
+    let dialogsElement= props.state.dialogsPage.dialogData.map(d=><DialogItem name={d.name} id={d.id}/>)
+    let messagesElements = props.state.dialogsPage.messagesData.map(m=><Message message={m.message}/>)
+    let currentMessage = props.state.dialogsPage.newMessagebody;
 
 
     let onSendMessageClick=()=>{
@@ -37,7 +37,7 @@ function Dialogs (props) {
             <div className={s.messages__item}>
                 {messagesElements}
                
-               <textarea value={onNewMessagebody}  onChange={onNewMessageChange}></textarea>
+               <textarea value={currentMessage}  onChange={onNewMessageChange}></textarea>
                <button onClick={onSendMessageClick} >add message</button>
 
             </div>
