@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/nav/nav';
 import Header from './components/header/header';
 import Footer from './components/footer/footers';
-import Dialogs from './components/dialogs/dialogs';
+import DialogsContainer from './components/dialogs/dialogsContainer';
 import ProfileCore from './components/profile/profile';
 import { Route, Routes } from 'react-router-dom';
 import Setting from './components/setting/setting';
@@ -14,7 +14,8 @@ import News from './components/news/news';
 
 function App(props) {
 
-
+  
+  
   
 
 
@@ -30,17 +31,10 @@ function App(props) {
           <Route path='/news' element={<News />}></Route>
           <Route path='/setting' element={<Setting />}></Route>
           <Route path='/music' element={<MusicContent />}></Route>
-          <Route path='/dialogs'
-            element={<Dialogs  
-             />}>
-
-          </Route>
+          <Route path='/dialogs' element={<DialogsContainer store={props.store}/>}> </Route>
 
 
-          <Route path='/profile' element={<ProfileCore 
-            
-            
-             />}>
+          <Route path='/profile' element={<ProfileCore  store={props.store} state={props.state}  />}>
 
           </Route>
         </Routes>

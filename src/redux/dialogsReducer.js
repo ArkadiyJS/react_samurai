@@ -2,7 +2,7 @@ const UPDATE_NEW_MESSAGE_BODY = 'UPDATE-NEW-MESSAGE-BODY';
 const SEND_MESSAGE = 'SEND_MESSAGE';
 
 let initialState={
-    dialogsPage: {
+     
         dialogData: [
       { id: 1, name: 'ark' },
       { id: 2, name: 'sveta' },
@@ -18,7 +18,7 @@ let initialState={
       { id: 5, message: 'kuzya message' },
         ],
     newMessageBody: ''
-  },};
+  ,};
 
 
 const dialogsReducer = (state=initialState, action) => {
