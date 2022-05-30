@@ -15,7 +15,7 @@ function MyPosts(props) {
     return (
         <div className={s.myPosts}>
             <div>
-                <textarea  ></textarea>
+                <textarea  >здесь будет текст</textarea>
             </div>
             <div>
                 <button >add post</button>
