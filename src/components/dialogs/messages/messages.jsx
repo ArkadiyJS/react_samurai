@@ -7,7 +7,7 @@ import s from "./../dialogs.module.css";
 const Message = (props) => {
     return(
         <div className={s.message}>
-            message
+            {props.message}
             </div>
     )
 }
