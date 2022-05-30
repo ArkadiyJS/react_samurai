@@ -7,22 +7,36 @@ import Post from "./post/post";
 
 function MyPosts(props) {
     
+    let postElements =
+        props.state.profilePage.posts.map(p=><Post message={p.message} likesCount={p.likesCount}/>);
+
+    let onAddPost = () => {
+            props.addPost();
+        }
+    let newPostElement =React.createRef();
+    
+    let onPostChange=()=>{
+        let text = newPostElement.current.value;
+        props.updateNewPostText(text);
+    }
     
     
+    let currentTextArea = props.state.profilePage.newPostText
 
     
 
     return (
         <div className={s.myPosts}>
             <div>
-                <textarea  >здесь будет текст</textarea>
+                <textarea onChange={onPostChange} value={currentTextArea} ref={newPostElement} ></textarea>
             </div>
             <div>
-                <button >add post</button>
+                <button onClick={onAddPost}>add post</button>
             </div>
 
             <div className={s.posts}> my posts</div>
-            <Post/>
+            
+            {postElements}
         </div>
      )
 }
