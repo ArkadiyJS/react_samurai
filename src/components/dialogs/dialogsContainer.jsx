@@ -11,7 +11,6 @@ import Dialogs from "./dialogs";
 function DialogsContainer (props) {
     
     
-    
     let onSendMessageClick =()=>{
         props.store.dispatch(sendMessageCreator());
     }

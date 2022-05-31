@@ -27,6 +27,7 @@ function MyPosts(props) {
 
     return (
         <div className={s.myPosts}>
+            
             <div>
                 <textarea onChange={onPostChange} value={currentTextArea} ref={newPostElement} ></textarea>
             </div>
