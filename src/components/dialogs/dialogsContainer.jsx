@@ -6,13 +6,13 @@ import { sendMessageCreator, updateNewMessageBodyCreator } from "../../redux/dia
 import Dialogs from "./dialogs";
 
 
-let mapStateToProps =(state)=>{
+const mapStateToProps =(state)=>{
     return{
         state: state
     }
 }
 
-let mapDispatchToProps =(dispatch)=>{
+const mapDispatchToProps =(dispatch)=>{
     return{
         sendMessage:()=>{
             dispatch(sendMessageCreator())

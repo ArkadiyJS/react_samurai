@@ -3,14 +3,14 @@ import { addPostActionCreator, updateNewPostTextActionCreator } from "../../../r
 import MyPosts from "./myPosts";
 
 
-let mapStateToProps=(state)=>{
+const mapStateToProps=(state)=>{
     return{
         state: state
         
     }
 }
 
-let mapDispatchToProps =(dispatch)=>{
+const mapDispatchToProps =(dispatch)=>{
     return{
     updateNewPostText:(text)=>{
         let action = updateNewPostTextActionCreator(text);
