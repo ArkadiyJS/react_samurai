@@ -10,7 +10,7 @@ import Message from "./messages/messages";
 
 
 function Dialogs (props) {
-    
+    debugger
     
 
     let dialogsElement= props.state.dialogsPage.dialogData.map(d=><DialogItem name={d.name} id={d.id}/>)
