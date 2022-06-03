@@ -26,7 +26,7 @@ function App(props) {
       <Header />
       <Navbar />
 
-      <div className='app-wraper-content' >
+      <div className='app-wrapper-content' >
         <Routes>
           <Route path='/news' element={<News />}></Route>
           <Route path='/setting' element={<Setting />}></Route>

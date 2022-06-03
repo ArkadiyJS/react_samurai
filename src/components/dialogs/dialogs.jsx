@@ -10,12 +10,12 @@ import Message from "./messages/messages";
 
 
 function Dialogs (props) {
-    debugger
+    
     
 
     let dialogsElement= props.state.dialogsPage.dialogData.map(d=><DialogItem name={d.name} id={d.id}/>)
     let messagesElements = props.state.dialogsPage.messagesData.map(m=><Message message={m.message}/>)
-    let currentMessage = props.state.dialogsPage.newMessagebody;
+    let currentMessage = props.state.dialogsPage.newMessageBody;
 
 
     let onSendMessageClick=()=>{

@@ -10,7 +10,7 @@
   margin: 0 auto;
   width: 1200px;
 }
-.app-wraper-content {
+.app-wrapper-content {
   grid-area: content;
   max-width: 1200px;
 }
