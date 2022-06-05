@@ -15,19 +15,18 @@ import {Provider} from 'react-redux'
     <React.StrictMode>
       
       <BrowserRouter>
-      <Provider store={store}>
-      <App state={state} dispatch={store.dispatch.bind(store)} store={store}
-        />
-      </Provider>
+        <Provider store={store}>
+          <App state={state} dispatch={store.dispatch.bind(store)} store={store}/>
+        </Provider>
       </BrowserRouter>
-      
       
     </React.StrictMode>,
   
     document.getElementById('root')
-  );}
+  );
+}
 
-  renderEntireTree(store.getState());
+renderEntireTree(store.getState());
 
 store.subscribe(()=>{
   let state = store.getState();

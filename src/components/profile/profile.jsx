@@ -14,9 +14,7 @@ function ProfileCore(props) {
                 <ProfileInfo/>
                 <MyPostsContainer  store={props.store} state={props.state}  />
             </div>
-
-
-
+            
         </div>
     )
 }

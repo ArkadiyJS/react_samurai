@@ -3,7 +3,8 @@ import s from'./footers.module.css';
 
 function Footer(props) {
     return(
-        <div className={s.footer__bar}>footerBar
+        <div className={s.footer__bar}>
+            footerBar
 
         </div>
     )

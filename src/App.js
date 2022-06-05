@@ -13,14 +13,7 @@ import News from './components/news/news';
 
 
 function App(props) {
-
-  
-  
-  
-
-
   return (
-    
 
     <div className='app-wrapper' >
       <Header />
@@ -28,18 +21,18 @@ function App(props) {
 
       <div className='app-wrapper-content' >
         <Routes>
+
           <Route path='/news' element={<News />}></Route>
           <Route path='/setting' element={<Setting />}></Route>
           <Route path='/music' element={<MusicContent />}></Route>
           <Route path='/dialogs' element={<DialogsContainer store={props.store} state={props.state} />}> </Route>
+          <Route path='/profile' element={<ProfileCore  store={props.store} state={props.state}  />}> </Route>
 
-
-          <Route path='/profile' element={<ProfileCore  store={props.store} state={props.state}  />}>
-
-          </Route>
         </Routes>
       </div>
+
       <Footer />
+      
     </div>
   );
 }

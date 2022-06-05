@@ -1,5 +1,4 @@
 import React from "react";
-
 import s from "./dialogs.module.css";
 import DialogItem from "./dialogItem/dialogItem";
 import Message from "./messages/messages";
@@ -11,12 +10,11 @@ import Message from "./messages/messages";
 
 function Dialogs (props) {
     
-    
-
     let dialogsElement= props.state.dialogsPage.dialogData.map(d=><DialogItem name={d.name} id={d.id}/>)
-    let messagesElements = props.state.dialogsPage.messagesData.map(m=><Message message={m.message}/>)
-    let currentMessage = props.state.dialogsPage.newMessageBody;
 
+    let messagesElements = props.state.dialogsPage.messagesData.map(m=><Message message={m.message}/>)
+    
+    let currentMessage = props.state.dialogsPage.newMessageBody;
 
     let onSendMessageClick=()=>{
         props.sendMessage();
@@ -43,8 +41,6 @@ function Dialogs (props) {
                <button onClick={onSendMessageClick} >add message</button>
 
             </div>
-
-
         </div>
     )
 }

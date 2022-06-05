@@ -13,6 +13,7 @@ function MyPosts(props) {
     let onAddPost = () => {
             props.addPost();
         }
+        
     let newPostElement =React.createRef();
     
     let onPostChange=()=>{
