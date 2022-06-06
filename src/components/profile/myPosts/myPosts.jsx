@@ -6,9 +6,9 @@ import Post from "./post/post";
 
 
 function MyPosts(props) {
-    
+    debugger
     let postElements =
-        props.state.profilePage.posts.map(p=><Post message={p.message} likesCount={p.likesCount}/>);
+        props.posts.map(p=><Post message={p.message} likesCount={p.likesCount}/>);
 
     let onAddPost = () => {
             props.addPost();
@@ -18,11 +18,11 @@ function MyPosts(props) {
     
     let onPostChange=()=>{
         let text = newPostElement.current.value;
-        props.updateNewPostText(text);
+        props.updateNewPostText(text); 
     }
     
     
-    let currentTextArea = props.state.profilePage.newPostText
+    let currentTextArea = props.newPostText
 
     
 
