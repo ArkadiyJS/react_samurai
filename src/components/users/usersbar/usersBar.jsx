@@ -6,7 +6,7 @@ function UsersBar (props){
     let followTry =()=>{
         props.followUp()
     }
-    -
+    
     return(
         <div className={s.usersBlock}>
             <div>

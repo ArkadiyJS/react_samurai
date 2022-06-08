@@ -1,15 +1,17 @@
 .profile {
-    grid-area: content;
-    background-color: aqua;
-    padding: 5px;
-  }
-  .profile img {
-    
-    max-height: 320px;
-    
-  }
-  .avatar img {
-    
-    width: 120px;
-    height: 90px;
-  }
+  grid-area: content;
+  background-color: aqua;
+  padding: 5px;
+}
+
+.profile img {
+
+  max-height: 320px;
+
+}
+
+.avatar img {
+
+  width: 120px;
+  height: 90px;
+}
