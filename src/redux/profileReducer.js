@@ -5,8 +5,8 @@ let initialState ={
      
     posts: [
       { id: 1, message: 'hi gayz', likesCount: 12 },
-      { id: 2, message: 'hi gayz mayz', likesCount: 15 },
-      { id: 3, message: 'hi dudu', likesCount: 15 },
+      { id: 2, message: 'hi gayz mayz', likesCount: 13 },
+      { id: 3, message: 'hi dudu', likesCount: 14 },
       { id: 4, message: 'hi gara dada', likesCount: 15 },
     ],
     newPostText: 'samurai'
@@ -24,6 +24,7 @@ const profileReducer = (state=initialState, action) => {
             };
             let stateCopy = {...state}
             stateCopy.posts = [...state.posts];
+
             stateCopy.posts.push(newPost);
             stateCopy.newPostText = '';
             return stateCopy;
@@ -34,7 +35,7 @@ const profileReducer = (state=initialState, action) => {
             return stateCopy;
 
         default:
-            return stateCopy;
+            return state;
     }
 }
 

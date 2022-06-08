@@ -5,7 +5,7 @@ import Dialogs from "./dialogs";
 
 const mapStateToProps =(state)=>{
     return{
-        state: state
+        dialogsPage: state.dialogsPage
     }
 }
 
