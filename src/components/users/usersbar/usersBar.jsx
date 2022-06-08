@@ -11,7 +11,7 @@ function UsersBar (props){
         <div className={s.usersBlock}>
             <div>
                 <div className={s.avatar}>
-                    <img alt="avaUsers"></img>
+                    <img src='https://i.pinimg.com/736x/d9/2d/6a/d92d6a2e69b6ea8f48a04e9e5453dc8f--warcraft-art-world-of-warcraft.jpg' alt="avaUsers"></img>
                 
                 </div>
             

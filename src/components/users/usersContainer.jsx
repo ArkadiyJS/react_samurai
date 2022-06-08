@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import { followUpCreator } from "../../redux/sidebarReducer";
-import Users from "./user";
+import Users from "./users";
 
 
 

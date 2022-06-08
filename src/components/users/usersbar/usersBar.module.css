@@ -1,0 +1,11 @@
+.usersBlock img {
+    width: 90px;
+    height: 110px;
+    border-radius: 50%;
+}
+.usersBlock{
+    
+    display: grid;
+    grid-template-columns: 90px 700px;
+    background-color: bisque;
+}
