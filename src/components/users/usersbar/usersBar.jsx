@@ -23,9 +23,9 @@ function UsersBar (props){
             
             <div className={s.usersInfo}>
 
-                 <div>{props.name}</div>
+                 <div>{props.fullName}</div>
 
-                <div>{props.country},{props.city}</div>
+                <div>{props.location}</div>
             
 
             </div>

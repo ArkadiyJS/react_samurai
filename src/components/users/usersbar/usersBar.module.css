@@ -9,3 +9,7 @@
     grid-template-columns: 90px 700px;
     background-color: bisque;
 }
+.buttonFollow{
+    display: grid;
+    align-self: center;
+}

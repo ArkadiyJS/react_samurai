@@ -4,14 +4,16 @@ import s from './users.module.css'
 
 
 function Users (props) {
-debugger
-    let usersElements = props.state.sidebar.usersPage.map(u=><UsersBar name={u.name} country={u.country} city={u.city}/>)
+
+
+    let usersElements = props.state.sidebar.usersPage.map(u=><UsersBar fullName={u.fullName} location={u.location.city}  />)
     return(
         <div>
             {usersElements}
             <div >
-                <button className={s.showMore}>Show more</button>
+                <button className={s.showMore} >Show more</button>
             </div>
+            
         </div>
     )
 }
