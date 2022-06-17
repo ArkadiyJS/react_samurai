@@ -1,5 +1,6 @@
-.showMore {
-    display: block;
-    margin: auto;
 
+.usersBlock img {
+    width: 90px;
+    height: 110px;
+    border-radius: 50%;
 }
