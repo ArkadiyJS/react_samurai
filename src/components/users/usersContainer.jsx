@@ -1,22 +1,34 @@
 import { connect } from "react-redux";
-import { followUpCreator } from "../../redux/sidebarReducer";
+import { followAC , setUsersAC, unfollowAC} from "../../redux/userReducer";
 import Users from "./users";
 
 
 
 const mapStateToProps=(state)=>{
+       
     return{
-        state: state
+        users: state.usersPage.users
         
 
     }
 }
-const mapStateToDispatch =(dispatch)=>{
+const mapDispatchToProps =(dispatch)=>{
     return{
-        followup:()=>{dispatch(followUpCreator())} 
+
+        followUp:(userid)=>{
+            dispatch(followAC(userid));
+        } ,
+        
+        unFollow:(userid)=>{
+            dispatch(unfollowAC(userid));
+        } ,
+
+        setUsers:(users)=>{
+            dispatch(setUsersAC(users));
+        }
     }
 }
 
 
-const UsersContainer = connect(mapStateToProps,mapStateToDispatch)(Users);
+const UsersContainer = connect(mapStateToProps,mapDispatchToProps)(Users);
 export default UsersContainer;
