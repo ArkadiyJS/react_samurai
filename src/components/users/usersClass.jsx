@@ -4,20 +4,25 @@ import * as axios from "axios";
 
 
 
-
-function Users (props) {
-    
-    if (props.users.length === 0){
-        axios.get('https://social-network.samuraijs.com/api/1.0/users').then(response => {
-    
-            props.setUsers(response.data.items)
-        });
-           
+class Users extends React.Component {
+    constructor(props){
+        super(props);
+        
+        axios.get('https://social-network.samuraijs.com/api/1.0/users')
+          .then(response => 
+            {this.props.setUsers(response.data.items)})
     }
-   
-     return <div className={s.usersBlock}>
+
+    
+    
+    render(){
+        return(
+
+        
+        <div className={s.usersBlock}>
+            
             {
-                props.users.map(u=><div key={u.id} >
+                this.props.users.map(u=><div key={u.id} >
                     <span>
                         <div className={s.avatar}>
                             <img src={u.photos.small != null ? u.photos.small: 'https://cdn.shazoo.ru/484333_3dxRqRs9wd_btntemp_1.png' } alt="avaUsers"></img>
@@ -26,8 +31,8 @@ function Users (props) {
             
                         <div className={s.buttonFollow}>
                             {u.followed 
-                                ? <button onClick={()=>{props.unFollow(u.id)}}> unfollow</button>
-                                :<button onClick={()=>{props.followUp(u.id)}}>follow </button>}
+                                ? <button onClick={()=>{this.props.unFollow(u.id)}}> unfollow</button>
+                                :<button onClick={()=>{this.props.followUp(u.id)}}>follow </button>}
                     
 
                         </div>
@@ -52,7 +57,10 @@ function Users (props) {
 
             
             }
-        </div>
-    
-        }
+        </div>)
+
+    }
+
+}
+
 export default Users

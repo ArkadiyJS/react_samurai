@@ -26,8 +26,6 @@ const profileReducer = (state=initialState, action) => {
                 ...state,
                 posts: [...state.posts,newPost],
                 newPostText:'',
-                
-
             };
             
             return stateCopy;

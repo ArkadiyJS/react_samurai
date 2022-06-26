@@ -12,7 +12,7 @@ function ProfileCore(props) {
             
             <div>
                 <ProfileInfo/>
-                <MyPostsContainer  store={props.store} state={props.state}  />
+                <MyPostsContainer    />
             </div>
             
         </div>

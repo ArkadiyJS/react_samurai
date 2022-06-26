@@ -7,7 +7,6 @@ const mapStateToProps=(state)=>{
     return{
         posts: state.profilePage.posts,
         newPostText: state.profilePage.newPostText
-        
     }
 }
 
@@ -16,13 +15,10 @@ const mapDispatchToProps =(dispatch)=>{
     updateNewPostText:(text)=>{
         let action = updateNewPostTextActionCreator(text);
         dispatch(action);
-
     },
     addPost:()=>{
         dispatch(addPostActionCreator());
-
     }
-
 }}
 
 
