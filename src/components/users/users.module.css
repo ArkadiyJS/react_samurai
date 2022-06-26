@@ -4,3 +4,11 @@
     height: 110px;
     border-radius: 50%;
 }
+.selectedPage{
+    font-weight: bold;
+    cursor: pointer;
+}
+.pages{
+    cursor: pointer;
+
+}
