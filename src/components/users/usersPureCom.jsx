@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import s from './users.module.css'
 
 
@@ -7,7 +8,12 @@ import s from './users.module.css'
 function UsersPureCom(props) {
 
 
-    
+    // // Math.ceil (this.props.totalUsersCount / this.props.pageSize); вместо 10
+        // let pagesCount = 10;
+        // let pages = [];
+        // for (let i = 1; i <= pagesCount; i++) {
+        //     pages.push(i);
+        // }
     let pagesCount = 10;
 
     let pages = [];
@@ -30,8 +36,9 @@ function UsersPureCom(props) {
                     props.users.map(u => <div key={u.id} >
                         <span>
                             <div className={s.avatar}>
+                                <NavLink to={'/profile*'+ u.id}>
                                 <img src={u.photos.small != null ? u.photos.small : 'https://cdn.shazoo.ru/484333_3dxRqRs9wd_btntemp_1.png'} alt="avaUsers"></img>
-
+                                </NavLink>
                             </div>
 
                             <div className={s.buttonFollow}>

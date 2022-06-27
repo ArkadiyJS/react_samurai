@@ -11,7 +11,7 @@ function ProfileCore(props) {
         <div className={s.profile}>
             
             <div>
-                <ProfileInfo/>
+                <ProfileInfo profile={props.profile}/>
                 <MyPostsContainer    />
             </div>
             

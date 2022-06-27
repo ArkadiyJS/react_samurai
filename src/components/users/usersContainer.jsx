@@ -33,12 +33,7 @@ class UsersContainer extends React.Component {
     }
 
     render() {
-        // // Math.ceil (this.props.totalUsersCount / this.props.pageSize); вместо 10
-        // let pagesCount = 10;
-        // let pages = [];
-        // for (let i = 1; i <= pagesCount; i++) {
-        //     pages.push(i);
-        // }
+        
 
         return <>
         <UsersPureCom currentPage={this.props.currentPage}
@@ -52,12 +47,6 @@ class UsersContainer extends React.Component {
         />
         {this.props.isFetching ? <Preloader/> : null}
         </>
-
-
-
-
-
-
 
     }
 
