@@ -65,7 +65,7 @@ const mapStateToProps = (state) => {
 
         currentPage: state.usersPage.currentPage,
 
-        isFetching: state.userPage.isFetching,
+        isFetching: state.usersPage.isFetching,
 
 
     }
