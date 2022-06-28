@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import s from './users.module.css'
 
-// // Math.ceil (this.props.totalUsersCount / this.props.pageSize); вместо 10
+// // Math.ceil (this.props.totalUsersCount / this.props.pageSize); вместо 10!
 // let pagesCount = 10;
 // let pages = [];
 // for (let i = 1; i <= pagesCount; i++) {
@@ -12,7 +12,7 @@ import s from './users.module.css'
 
 function UsersPureCom(props) {
 
-    debugger
+    
 
     let pagesCount = 10;
 
@@ -39,7 +39,7 @@ function UsersPureCom(props) {
                     <span>
                         <div>
                         
-                            <NavLink to={'/profile*'+ u.id}>
+                            <NavLink to={'/profile/'+ u.id}>
                             <img src={u.photos.small != null ? u.photos.small : 'https://i.pinimg.com/originals/a8/6f/7d/a86f7d00f556203f9b43abff6ca6e9de.jpg'} />
                             </NavLink>
                         </div>

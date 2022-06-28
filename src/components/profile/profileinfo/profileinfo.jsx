@@ -4,7 +4,7 @@ import s from './profileinfo.module.css';
 
 
 function ProfileInfo(props) {
-    debugger
+    
     if (!props.profile){
         return<Preloader/>
     }
@@ -13,7 +13,7 @@ function ProfileInfo(props) {
     return (
         <div className={s.profile}>
             <div className=''>
-                <img src={props.profile.photos.small} alt='pfotoSmall'></img>
+                <img src={props.profile.photos.small} alt='photoSmall'></img>
 
             </div>
             <div className={s.avatar}>
