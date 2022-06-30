@@ -40,7 +40,7 @@ function UsersPureCom(props) {
                         <div>
                         
                             <NavLink to={'/profile/'+ u.id}>
-                            <img src={u.photos.small != null ? u.photos.small : 'https://i.pinimg.com/originals/a8/6f/7d/a86f7d00f556203f9b43abff6ca6e9de.jpg'} />
+                            <img alt="avatarUser" src={u.photos.small != null ? u.photos.small : 'https://i.pinimg.com/originals/a8/6f/7d/a86f7d00f556203f9b43abff6ca6e9de.jpg'} />
                             </NavLink>
                         </div>
                         <div >
