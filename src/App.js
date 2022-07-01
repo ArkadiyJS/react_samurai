@@ -11,7 +11,7 @@ import News from './components/news/news';
 import UsersContainer from './components/users/usersContainer';
 import ProfileContainer from './components/profile/profileContainer';
 
-
+// 'параметры для URL пишем' в route в path /profile/:userId
 
 
 function App(props) {

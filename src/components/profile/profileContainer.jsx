@@ -11,21 +11,23 @@ import s from './profile.module.css';
 
 class ProfileContainer extends React.Component{
     
-    // componentDidMount(){
+    componentDidMount(){
     //   let userId = this.props.match.params.userId;
-    //   if(!userId){
-    //     userId =2
+    //   if ( !userId ) {
+    //     userId = 2
+    //}
+    
+        axios.get('https://social-network.samuraijs.com/api/1.0/profile/')
+        .then(response=> {
+            
+            this.setUserProfile(response.data);
+            
+            
+            
 
-    //   }
-    //     axios.get('https://social-network.samuraijs.com/api/1.0/profile/' + userId)
-    //     .then(response=> {
-            
-    //         this.setUserProfile(response.data);
-            
-            
-
-    //     });
-    // }
+        });
+        debugger
+    }
 
 
 
@@ -63,7 +65,7 @@ const mapDispatchToProps=(dispatch)=>{
 }
 // let WithUrlDataContainerComponent=useHref(ProfileContainer)
 
-export default connect(mapStateToProps,)(ProfileContainer);
+export default connect(mapStateToProps,mapDispatchToProps)(ProfileContainer);
 
 
 
