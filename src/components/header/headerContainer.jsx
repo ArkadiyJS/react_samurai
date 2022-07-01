@@ -13,25 +13,28 @@ class HeaderContainer extends React.Component {
       .then(response=>{
          
          if(response.data.resultCode===0){
-            let {id, login, email} = response.data.data
-           this.props.setAuthUserData(id, login, email)}
+            let {email, id, login, } = response.data.data
+           this.props.setAuthUserData(email, id, login, )}
       })
    }
    render(){
     return<Header {...this.props}/>
    }
 }
-const mapStateToProps=()=>({
+const mapStateToProps=(state)=>({
+   isAuth: state.auth.isAuth,
+   login: state.auth.login,
    
 });
-const mapDispatchToProps=()=>{
-   return{
-      // setAuthUserData:(id, login, email)=>{
-      //    dispatch(setAuthUserDataAC(id, login, email)
-      // }
-   }
 
-   
-}
+
+   const mapDispatchToProps = (dispatch) => {
+      
+      return{
+         setAuthUserData:(email, id, login, )=>{
+            dispatch(setAuthUserDataAC(email, id, login, ))
+         }
+
+   }}
 
 export default connect(mapStateToProps,mapDispatchToProps)(HeaderContainer);

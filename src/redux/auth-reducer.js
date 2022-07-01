@@ -7,6 +7,7 @@ let initialState ={
   userId: null,
   email: null,
   login: null,
+  isAuth: false,
 }
 
 const authReducer = (state =initialState,action )=>{
@@ -14,7 +15,9 @@ const authReducer = (state =initialState,action )=>{
     case SET_USER_DATA:
       return{
         ...state,
-        ...action.data
+        ...action.data,
+        isAuth:true,
+        login:action.login,
       }
 
 
