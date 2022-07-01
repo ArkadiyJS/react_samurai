@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/nav/nav';
-import Header from './components/header/header';
 import Footer from './components/footer/footers';
 import DialogsContainer from './components/dialogs/dialogsContainer';
 import { Route, Routes } from 'react-router-dom';
@@ -10,15 +9,17 @@ import MusicContent from './components/musiс/music';
 import News from './components/news/news';
 import UsersContainer from './components/users/usersContainer';
 import ProfileContainer from './components/profile/profileContainer';
+import HeaderContainer from './components/header/headerContainer';
 
-// 'параметры для URL пишем' в route в path /profile/:userId
+// 'параметры для URL пишем' в route в path '/profile/:userId?'
 
 
 function App(props) {
   return (
 
     <div className='app-wrapper' >
-      <Header />
+      
+      <HeaderContainer />
       <Navbar />
 
       <div className='app-wrapper-content' >

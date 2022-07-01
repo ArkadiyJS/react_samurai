@@ -26,7 +26,7 @@ class ProfileContainer extends React.Component{
             
 
         });
-        debugger
+        
     }
 
 

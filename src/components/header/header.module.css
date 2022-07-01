@@ -1,8 +1,22 @@
 .header__line {
+  display: grid;
+  grid-template-columns: 1fr 90px;
+  grid-template-rows: 1fr;
     grid-area: head_line;
     background-color: rgb(92, 93, 91);
     padding: 10px;
     }
   .logo_head img {
     width: 60px;
+  }
+  .loginBlock{
+    align-self: center;
+    justify-self: center;
+    
+    
+    
+  }
+  .loginBlock a{
+    text-decoration: none;
+    color: white;
   }
