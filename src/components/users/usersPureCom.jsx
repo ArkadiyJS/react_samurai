@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import s from './users.module.css'
@@ -45,8 +46,37 @@ function UsersPureCom(props) {
                         </div>
                         <div >
                             {u.followed
-                                ? <button onClick={() => { props.unFollow(u.id) }}>unfollow</button>
-                                : <button onClick={() => { props.followUp(u.id) }}>follow </button>
+                                ? <button onClick={() => {
+                                    axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`,
+                                    {
+                                    withCredentials:true,
+                                    headers:{
+                                        "API-KEY":'3a17e2ad-7a32-44d3-a695-70588fd52fad'
+                                    }
+                                })
+                                .then(response=>{
+                                    if (response.data.resultCode===0){
+                                        props.unFollow(u.id)
+
+                                    }
+                                })
+                                    
+                                    
+                                     }}>unfollow</button>
+
+                                : <button onClick={() => {
+                                    axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`,{},{
+                                        withCredentials:true,
+                                        headers:{
+                                            "API-KEY":'3a17e2ad-7a32-44d3-a695-70588fd52fad'
+                                        }
+                                    })
+                                    .then(response=>{
+                                        if (response.data.resultCode===0){
+                                            props.followUp(u.id)
+
+                                        }
+                                    })  }}>follow </button>
                             }
                         </div>
 
