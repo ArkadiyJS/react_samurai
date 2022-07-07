@@ -1,9 +1,16 @@
+import { usersAPI } from '../api/api.js'
+
+
+
 const FOLLOW = 'FOLLOW';
 const UNFOLLOW = 'UNFOLLOW';
 const SET_USERS= 'SET_USERS';
 const SET_CURRENT_PAGE ='SET_CURRENT_PAGE';
 const SET_TOTAL_COUNT = 'SET_TOTAL_COUNT';
 const TOGGLE_IS_FETCHING ='TOGGLE_IS_FETCHING';
+
+
+
 
 let initialState = {
   users:[],
@@ -74,15 +81,70 @@ const userReducer = (state = initialState, action) => {
       return state;
   }
 }
-export const setToggleIsFetchingAC=(isFetching)=>({type:TOGGLE_IS_FETCHING, isFetching})
+export const toggleIsFetching=(isFetching)=>({type:TOGGLE_IS_FETCHING, isFetching})
 
-export const setUsersAC= (users) =>({type:SET_USERS, users});
+export const setUsers= (users) =>({type:SET_USERS, users});
 
-export const followAC = (userid) => ({ type: FOLLOW, userid });
+export const followUpSuccess = (userid) => ({ type: FOLLOW, userid });
 
-export const unfollowAC = (userid) => ({ type: UNFOLLOW, userid });
+export const unFollowSuccess = (userid) => ({ type: UNFOLLOW, userid });
 
-export const setCurrentPageAC = (currentPage)=>({type: SET_CURRENT_PAGE,currentPage })
-export const setTotalCountAC =(totalCount)=>({type:SET_TOTAL_COUNT, totalCount})
+export const setCurrentPage = (currentPage)=>({type: SET_CURRENT_PAGE,currentPage })
+export const setTotalCount =(totalCount)=>({type:SET_TOTAL_COUNT, totalCount})
+
+export const getUsersThunkCreator=(currentPage,pageSize,p)=>{
+  return (dispatch)=>{
+    dispatch(toggleIsFetching(true))
+    
+    usersAPI.getUsers(currentPage,pageSize)
+      .then(data => {
+
+        dispatch(setCurrentPage(currentPage))
+        dispatch(toggleIsFetching(false))
+        dispatch(setUsers(data.items))
+        dispatch(setTotalCount(data.totalCount))
+      })
+  }
+}
+
+export const followThunkCreator=(userId)=>{
+  return (dispatch)=>{
+    dispatch(toggleIsFetching(true, userId))
+  
+    usersAPI.followUp(userId).then(response=>{
+
+      if (response.data.resultCode===0){
+          dispatch(followUpSuccess(userId))
+
+      }
+      dispatch(toggleIsFetching(false, userId))
+  })
+}
+
+}
+
+
+export const unFollowThunkCreator=(userId)=>{
+    return(dispatch)=>{
+      dispatch(toggleIsFetching(true, userId))
+      
+    usersAPI.unFollow(userId).then(response => {
+        if (response.data.resultCode === 0) {
+          dispatch(unFollowSuccess(userId))
+            dispatch(toggleIsFetching(false, userId))
+          }
+    })
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 export default userReducer;
