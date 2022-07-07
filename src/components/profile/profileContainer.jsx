@@ -1,8 +1,11 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
+import { compose } from 'redux';
+
 
 import { profileThunkCreator } from '../../redux/profileReducer';
+
 import ProfileCore from './profile';
 import s from './profile.module.css';
 // import {useHref} from 'react-router-dom'
@@ -25,6 +28,7 @@ class ProfileContainer extends React.Component{
 
 
     render(){
+        
         return (
         <div className={s.profile}>
             
@@ -39,14 +43,20 @@ class ProfileContainer extends React.Component{
     }
 }
 
+
+
+
+
+
 const mapStateToProps= (state)=>{
     
     return{
-    profile: state.profilePage.profile
+    profile: state.profilePage.profile,
+    
 }
 
 }
-
+// compose(withAuthRedirect)(ProfileContainer)
 // let WithUrlDataContainerComponent=useHref(ProfileContainer)
 
 export default connect(mapStateToProps,{profileThunkCreator})(ProfileContainer);

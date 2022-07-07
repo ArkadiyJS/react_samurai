@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { followThunkCreator,  unFollowThunkCreator, setCurrentPage, setTotalCount,  getUsersThunkCreator } from "../../redux/userReducer";
 import UsersPureCom from "./usersPureCom";
 import Preloader from "../preloader/preloader";
+import { Navigate } from "react-router-dom";
 
 
 
@@ -21,7 +22,7 @@ class UsersContainer extends React.Component {
 
     render() {
 
-
+        if (this.props.isAuth === false) return <Navigate to={'/login'}/>;
         return <>
             <UsersPureCom currentPage={this.props.currentPage}
                 onPageChanged={this.onPageChanged}
@@ -52,6 +53,7 @@ const mapStateToProps = (state) => {
         currentPage: state.usersPage.currentPage,
 
         isFetching: state.usersPage.isFetching,
+        isAuth : state.auth.isAuth
 
 
     }
@@ -62,6 +64,4 @@ const mapStateToProps = (state) => {
 export default connect(mapStateToProps,
      {followThunkCreator,  unFollowThunkCreator,
      setCurrentPage, setTotalCount, 
-     getUsersThunkCreator,
-    
-    })(UsersContainer);
+     getUsersThunkCreator,})(UsersContainer);
