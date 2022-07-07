@@ -1,6 +1,7 @@
-import axios from "axios";
+
 import React from "react";
 import { NavLink } from "react-router-dom";
+
 import s from './users.module.css'
 
 // // Math.ceil (this.props.totalUsersCount / this.props.pageSize); вместо 10!
@@ -30,9 +31,9 @@ function UsersPureCom(props) {
 
 
             <div className={s.pages}>
-                {pages.map((p) => {
-                    return <span onClick={(e) => props.onPageChanged(p)}
-                        className={props.currentPage === p && s.selectedPage}>{p} </span>
+                {pages.map((currentPage) => {
+                    return <span onClick={(e) => props.onPageChanged(currentPage)}
+                        className={props.currentPage === currentPage && s.selectedPage}>{currentPage} </span>
                 })}
             </div>
             {
@@ -46,37 +47,8 @@ function UsersPureCom(props) {
                         </div>
                         <div >
                             {u.followed
-                                ? <button onClick={() => {
-                                    axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`,
-                                    {
-                                    withCredentials:true,
-                                    headers:{
-                                        "API-KEY":'3a17e2ad-7a32-44d3-a695-70588fd52fad'
-                                    }
-                                })
-                                .then(response=>{
-                                    if (response.data.resultCode===0){
-                                        props.unFollow(u.id)
-
-                                    }
-                                })
-                                    
-                                    
-                                     }}>unfollow</button>
-
-                                : <button onClick={() => {
-                                    axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${u.id}`,{},{
-                                        withCredentials:true,
-                                        headers:{
-                                            "API-KEY":'3a17e2ad-7a32-44d3-a695-70588fd52fad'
-                                        }
-                                    })
-                                    .then(response=>{
-                                        if (response.data.resultCode===0){
-                                            props.followUp(u.id)
-
-                                        }
-                                    })  }}>follow </button>
+                                ? <button onClick={() => {props.unFollowThunkCreator(u.id)}}>unfollow</button>
+                                : <button onClick={() => {props.followThunkCreator(u.id)}}>follow </button>
                             }
                         </div>
 
