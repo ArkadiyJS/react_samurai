@@ -10,6 +10,7 @@ import News from './components/news/news';
 import UsersContainer from './components/users/usersContainer';
 import ProfileContainer from './components/profile/profileContainer';
 import HeaderContainer from './components/header/headerContainer';
+import LoginPage from './components/login/login';
 
 // 'параметры для URL пишем' в route в path '/profile/:userId?'
 
@@ -24,7 +25,7 @@ function App(props) {
 
       <div className='app-wrapper-content' >
         <Routes>
-
+          <Route path='/login' element={<LoginPage />}></Route>
           <Route path='/users*' element={<UsersContainer />}></Route>
           <Route path='/news*' element={<News />}></Route>
           <Route path='/setting*' element={<Setting />}></Route>
