@@ -4,14 +4,14 @@ import MyPostsContainer from './myPosts/myPostsContainer';
 import ProfileInfo from './profileinfo/profileinfo';
 
 function ProfileCore(props) {
-    
+    debugger
     
     
     return (
         <div className={s.profile}>
             
             <div>
-                <ProfileInfo profile={props.profile}/>
+                <ProfileInfo />
                 <MyPostsContainer    />
             </div>
             

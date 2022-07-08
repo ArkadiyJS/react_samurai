@@ -15,7 +15,7 @@ let initialState ={
       { id: 4, message: 'hi gara dada', likesCount: 15 },
     ],
     newPostText: 'samurai',
-    profile: null,
+    // profile: null,
   }
 
 
