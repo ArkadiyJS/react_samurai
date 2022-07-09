@@ -17,8 +17,12 @@ class ProfileContainer extends React.Component{
     //     userId = 2
     //}
     this.props.profileThunkCreator();
-    this.props.statusThunkCreator();
     
+    
+    }
+    componentDidUpdate(){
+        
+        this.props.statusThunkCreator();
     }
 
 

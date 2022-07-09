@@ -1,16 +1,15 @@
 import React from "react";
-import s from './login.module.css'
+
+import ReduxLoginForm from "./loginForm";
 
 
-function LoginPage(){
+function LoginPage(props) {
+  
   return (
-    <div className={s.loginBlock}>Кто ты?
-
-      <div className={s.item}>логин<input></input></div>
-      <div className={s.item}>пароль<input></input></div>
-      <div className={s.item}> <button>продолжить</button></div>
+    <div >Кто ты?
+      <ReduxLoginForm   />
     </div>
-    
+
   )
 }
 
