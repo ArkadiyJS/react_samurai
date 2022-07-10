@@ -4,6 +4,7 @@ import { followThunkCreator,  unFollowThunkCreator, setCurrentPage, setTotalCoun
 import UsersPureCom from "./usersPureCom";
 import Preloader from "../preloader/preloader";
 import { Navigate } from "react-router-dom";
+import { getUsersSelectors } from "../../redux/usersSelectors";
 
 
 
@@ -44,7 +45,7 @@ class UsersContainer extends React.Component {
 const mapStateToProps = (state) => {
 
     return {
-        users: state.usersPage.users,
+        users: getUsersSelectors(),
 
         pageSize: state.usersPage.pageSize,
 
@@ -59,6 +60,7 @@ const mapStateToProps = (state) => {
     }
 
 }
+
 
 
 export default connect(mapStateToProps,
