@@ -16,7 +16,7 @@ let initialState ={
       { id: 4, message: 'hi gara dada', likesCount: 15 },
     ],
     newPostText: 'samurai',
-    status:'status'
+    status:''
     // profile: null,
   }
 
@@ -71,12 +71,12 @@ export const updateNewPostTextActionCreator = (text) => ({ type: UPDATE_NEW_POST
 
 
 
-export const statusThunkCreator=(userId)=>{
+export const statusThunkCreator=(userId=24706)=>{
 
     return(dispatch)=>{
         
         
-        profileAPI.getStatus(userId).then(response=> {
+        profileAPI.getStatus(userId=24706).then(response=> {
             
             dispatch(setStatus(response.data));
          })

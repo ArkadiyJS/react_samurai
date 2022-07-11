@@ -50,7 +50,7 @@ class ProfileContainer extends React.Component{
 
 
 const mapStateToProps= (state)=>{
-    
+    debugger
     return{
     profile: state.profilePage.profile,
     status: state.profilePage.status,
@@ -61,7 +61,8 @@ const mapStateToProps= (state)=>{
 // compose(withAuthRedirect)(ProfileContainer)
 // let WithUrlDataContainerComponent=useHref(ProfileContainer)
 
-export default connect(mapStateToProps,{profileThunkCreator,updateStatusThunkCreator,statusThunkCreator})(ProfileContainer);
+export default connect(mapStateToProps,
+    {profileThunkCreator,updateStatusThunkCreator,statusThunkCreator})(ProfileContainer);
 
 
 

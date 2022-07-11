@@ -1,5 +1,5 @@
 export const getUsersSelectors = (state)=>{
-  return state.usersPage.items
+  return state.usersPage.users
 }
  
 
