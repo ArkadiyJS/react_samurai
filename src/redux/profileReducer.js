@@ -98,10 +98,10 @@ export const updateStatusThunkCreator=(status)=>{
 
 
 
-export const profileThunkCreator = ()=>{
+export const profileThunkCreator =  ()=>{
     return(dispatch)=>{
 
-        usersAPI.getUsersProfile().then(data=> {
+         usersAPI.getUsersProfile().then(data=> {
             
         dispatch(setUserProfile(data));
        
